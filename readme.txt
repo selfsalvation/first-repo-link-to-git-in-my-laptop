@@ -16,3 +16,21 @@ Git同样告诉我们，用命令git reset HEAD <file>可以把暂存区的修�
 git diff :比较工作区与暂存区
 git checkout ：回复工作区到最新的commit或者add
 git reset HEAD file ：撤销暂存区到工作区
+
+删除版本库中的文件：git rm 文件名
+		git commit
+
+或
+	rm 文件名
+	git add 文件名
+	git commit
+
+rm 文件名
+取消删除
+git checkout -- 文件名
+
+一个ssh可以验证一个电脑的身份
+为什么GitHub需要SSH Key呢？因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。
+
+当然，GitHub允许你添加多个Key。假定你有若干电脑，你一会儿在公司提交，一会儿在家里提交，只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。
+
